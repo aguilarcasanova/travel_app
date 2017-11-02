@@ -1,0 +1,11 @@
+
+  <%= image_tag @destination.img.url, class: "img-responsive center-block" %>
+<h1><%= @destination.city %>, <%= @destination.country %></h1>
+<p><%= @destination.description %></p>
+
+<div class="btn-group">
+  <%= link_to 'Edit', edit_destination_path(@destination), class: 'btn btn-default' %>
+  <%= link_to 'Back', destinations_path, class: 'btn btn-default' %>
+</div>
+
+
