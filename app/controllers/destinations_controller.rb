@@ -1,5 +1,7 @@
 class DestinationsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_destination, only: [:show, :edit, :update, :destroy]
+  
 
   # GET /destinations
   # GET /destinations.json
