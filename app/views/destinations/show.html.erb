@@ -1,5 +1,10 @@
+<% if notice != nil %>
+  <p id='notice' class="alert alert-success" role="alert">
+    <%= notice %>
+  </p>
+<% end %>
 
-  <%= image_tag @destination.img.url, class: "img-responsive center-block" %>
+<%= image_tag @destination.img.url, class: "img-responsive center-block" %>
 <h1><%= @destination.city %>, <%= @destination.country %></h1>
 <p><%= @destination.description %></p>
 
